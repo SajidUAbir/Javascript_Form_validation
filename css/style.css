@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    line-height: .8;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: url('../images/01.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.resigistion {
+    width:500px;
+    background-color: #fff2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.resigistion form {
+    padding: 50px;
+}
+
+.headline {
+    height: 100px;
+    background-color: #fff3;
+    
+}
+.headline h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 100px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.field input{
+    height: 40px;
+    width: 100%;
+    border: 2px solid #6AA0AD;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.field input[placeholder]{
+    font-size: 20px;
+    background-color: #0003;
+    color: #fff;
+}
+
+
+
+.resigistion button{
+    padding: 10px 30px;
+    background-color: #0001;
+    border: 2px solid #6AA0AD;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all linear 0.5s;
+}
+
+ .resigistion button:hover{
+    cursor: pointer;
+    background-color: #6AA0AD80;
+    border: 2px solid transparent;
+}
+
+.error_mess {
+    height: 40px;
+    line-height: 40px;
+    color: #ff355e;
+}
+
+.passwd_mess {
+    color: #fff;
+    height: 40px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.icon{
+    position: relative;
+}
+.icon i {
+    height: 40px;
+    width: 60px;
+    line-height: 40px ;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #6AA0AD;
+}
+.icon i::after {
+    content: '';
+    height: 40px;
+    width: 3px;
+    position: absolute;
+    background-color: #6AA0AD;
+    top: 0;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+.line::after {
+    display: none;
+}
+
+.login {
+    padding-top: 30px;
+    color: #fff;
+}
+.login a{
+    color: #6AA0AD;
+}
+
+.terms {
+    color: #fff;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+.terms a{
+    color: #6AA0AD;
+}
+
+#pcheck {
+    padding-top: 5px;
+}

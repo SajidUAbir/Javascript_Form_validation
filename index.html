@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="resigistion">
+
+        <div class="headline">
+            <h2>Create your account</h2>
+        </div>
+
+        <form action="">
+
+            <div class="field">
+                <input id="fname" type="text" placeholder="First name">
+                <div id="error_fname" class="error_mess"></div>
+            </div>
+            <div class="field">
+                <input id="lname" type="text" placeholder="Last name">
+                <div id="error_lname" class="error_mess"></div>
+            </div>
+
+            <div class="field">
+                <input id="email" type="email" placeholder="Email">
+                <div id="error_email" class="error_mess"></div>
+            </div>
+
+            <div class="field  icon">
+                <input id="pwd" type="password" placeholder="Password">
+                <i id="showpass" class="fas fa-eye" onclick="return showpwd()"></i>
+                <div id="error_password" class="error_mess passwd_mess">Password must contain at least 8 and spacial characters</div>
+            </div>
+
+            <div class="field icon">
+                <input id="comform_pwd" type="password" placeholder="Confirm password">
+                <i id="seccond" class="fas fa-eye" onclick="return showconfirm()"></i>
+                <div id="error_comform_pwd" class="error_mess"></div>
+            </div>
+
+            <div class="field">
+                <input id="pnumber" type="text" placeholder="Phone number (Optional)">
+                <div id="pnumber_error" class="error_mess"></div>
+            </div>
+
+            <div class="terms">
+                <input id="cbox" type="checkbox">
+                By signing in, you agree to <a href="#">Conditions</a> of Use and <a href="#">Privacy Policy</a>.
+                <p id="pcheck"></p>
+            </div>
+
+            <button onclick="return sub()">Sign Up</button>
+            <div class="login">
+                Already have an account? <a href="#"> Sign in</a>
+            </div>
+        </form>
+
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
